@@ -16,7 +16,7 @@ import SinglePlacePage from "./pages/SinglePlacePage";
 import BookingsPage from "./pages/BookingsPage";
 import SingleBookingPage from "./pages/SingleBookingPage";
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "https://airbnb-clone-backend-f7f9.onrender.com";
 axios.defaults.withCredentials = true;
 function App() {
   

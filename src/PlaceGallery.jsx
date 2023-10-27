@@ -33,13 +33,15 @@ const PlaceGallery = ({place}) => {
           {place?.photos?.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {place.photos.map((photo) => (
+               
                 <div className="flex items-center justify-center aspect-square">
                   <img
                     className="object-cover"
-                    src={"http://localhost:4000/uploads/" + photo}
+                    src={photo}
                     alt="Photo"
                   />
                 </div>
+                
               ))}
             </div>
           )}
@@ -57,7 +59,7 @@ const PlaceGallery = ({place}) => {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className="aspect-square cursor-pointer object-cover max-h-90"
-                src={"http://localhost:4000/uploads/" + place.photos[0]}
+                src={place.photos[0]}
               />
             </div>
           )}
@@ -67,7 +69,7 @@ const PlaceGallery = ({place}) => {
             <img
               onClick={() => setShowAllPhotos(true)}
               className="aspect-square cursor-pointer object-cover"
-              src={"http://localhost:4000/uploads/" + place.photos[1]}
+              src={place.photos[1]}
             />
           )}
 
@@ -76,7 +78,7 @@ const PlaceGallery = ({place}) => {
               <img
                 onClick={() => setShowAllPhotos(true)}
                 className="aspect-square cursor-pointer object-cover relative top-2"
-                src={"http://localhost:4000/uploads/" + place.photos[2]}
+                src={place.photos[2]}
               />
             )}
           </div>

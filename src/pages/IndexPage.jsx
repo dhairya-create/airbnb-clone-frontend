@@ -21,7 +21,7 @@ const IndexPage = () => {
           <Link to={'/place/'+item._id}>
           <div className='bg-gray-500 mb-2 rounded-2xl flex hover:scale-105 transition-all duration-500'>
           {item.photos?.[0] && (
-            <img className='rounded-2xl object-cover aspect-square' src={'http://localhost:4000/uploads/'+item.photos?.[0]} alt=''/>
+            <img className='rounded-2xl object-cover aspect-square' src={item.photos?.[0]} alt=''/>
           )}
           </div>
          
