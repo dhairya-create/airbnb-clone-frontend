@@ -6,8 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { UserContext } from "../UserContext";
 
-import { Slide, Zoom, Flip, Bounce } from 'react-toastify';
-
+import { Slide, Zoom, Flip, Bounce } from "react-toastify";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -56,7 +55,7 @@ const LoginPage = () => {
             required
           />
           <button className="primary">Login</button>
-          <ToastContainer  transition={Zoom} />
+          <ToastContainer transition={Zoom} />
 
           <div className="text-center py-2 text-gray-500">
             Don't have an account yet?{" "}
